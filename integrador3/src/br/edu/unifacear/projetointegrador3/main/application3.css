@@ -1,0 +1,55 @@
+.button{
+	-fx-background-color: transparent;
+}
+
+.button:hover{
+	-fx-background-color: transparent;
+	-fx-background-radius: 0px;
+	-fx-text-fill: #FFFFFF;
+	-fx-border-color: rgb(22,169,250);
+	-fx-border-width: 0px 2px 0px 0px;
+	
+}
+
+.button:pressed{
+	-fx-background-color: #6A48A4;
+}
+
+.fundoroxo{
+	-fx-background-color: #3F2B62;
+}
+.linear-grad1{
+   -fx-background-color: linear-gradient(to right, #635FC9, #C881AB);
+}
+.linear-grad2{
+   -fx-background-color: linear-gradient(to right, #ff7f50, #6a5acd);
+}
+.linear-grad3{
+   -fx-background-color: linear-gradient(to right, #6a5acd, #008C2E);
+}
+
+.imagemList{
+	-fx-background-radius: 20px;
+	-fx-background-image: url("teste.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 200 50;
+    -fx-background-position: center center;
+}
+
+.paneComBorda{
+	-fx-background-color: transparent;
+	-fx-border-color:  #5749CF;
+	-fx-border-radius: 20;
+}
+
+.paneGradBord{
+	-fx-background-color: linear-gradient(to bottom left,  #CE92FC, #97B4FF);
+	-fx-effect: dropshadow(three-pass-box, #000000, 10, 0, 0, 0);
+	-fx-background-radius: 20;
+	-fx-border-radius: 20;
+}
+.dropshadown{
+	-fx-effect: dropshadow(three-pass-box, #000000, 10, 0, 0, 0);
+
+}
+
