@@ -19,7 +19,7 @@
 	-fx-background-color: #3F2B62;
 }
 .linear-grad1{
-   -fx-background-color: linear-gradient(to right, #635FC9, #C881AB);
+   -fx-background-color: linear-gradient(to right, #282E34, #F21116);
 }
 .linear-grad2{
    -fx-background-color: linear-gradient(to right, #ff7f50, #6a5acd);

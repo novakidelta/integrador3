@@ -16,10 +16,13 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws IOException {
 		
-		Parent root = FXMLLoader.load(getClass().getResource("Application.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
 		Scene scene = new Scene(root);
-		primaryStage.initStyle(StageStyle.UNDECORATED);
 		primaryStage.setScene(scene);
+		primaryStage.setTitle("Integrador 3");
+		primaryStage.setMaximized(false);
+        primaryStage.setMinHeight(630);
+        primaryStage.setMinWidth(850.0);
 		primaryStage.show();
 		
 	}	

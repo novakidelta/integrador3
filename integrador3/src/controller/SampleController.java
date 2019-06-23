@@ -13,6 +13,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
@@ -40,7 +41,6 @@ public class SampleController {
     @FXML
     private BorderPane borderpane;
     
-
    
     public void botao() throws IOException {
     	FXMLLoader loader = new FXMLLoader(getClass().getResource("ListaBar.fxml"));
@@ -57,7 +57,7 @@ public class SampleController {
     
     @FXML
     public void mostrarinicio(ActionEvent event) throws IOException {
-    	Parent inicio = FXMLLoader.load(getClass().getResource("CadastroProjeto.fxml"));
+    	Parent inicio = FXMLLoader.load(getClass().getResource("TelaInicio.fxml"));
     	borderpane.setCenter(inicio);
     }
     
@@ -65,6 +65,7 @@ public class SampleController {
     public void mostrarteste(ActionEvent event) throws IOException {
     	Parent teste = FXMLLoader.load(getClass().getResource("InicioProjetos.fxml"));
     	borderpane.setCenter(teste);
+    	BorderPane.setAlignment(teste,Pos.CENTER);
     }
     
     @FXML

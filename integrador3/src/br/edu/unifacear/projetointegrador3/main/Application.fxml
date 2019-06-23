@@ -3,10 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.image.Image?>
@@ -19,10 +16,8 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.shape.Circle?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="acMain" prefHeight="593.0" prefWidth="767.0" stylesheets="@Application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ApplicationController">
+<AnchorPane id="AnchorPane" fx:id="acMain" prefHeight="593.0" prefWidth="767.0" stylesheets="@../style/Application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ApplicationController">
    <children>
       <StackPane layoutY="-9.0" prefHeight="593.0" prefWidth="767.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -30,99 +25,83 @@
                <left>
                   <AnchorPane fx:id="acDashBord">
                      <children>
-                        <ScrollPane fx:id="leftSideBarScroolPan" prefHeight="678.0" prefViewportHeight="678.0" prefViewportWidth="128.0" prefWidth="128.0" translateX="1.0" translateY="1.0" translateZ="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <ScrollPane fx:id="leftSideBarScroolPan" prefHeight="678.0" prefViewportHeight="678.0" prefViewportWidth="128.0" prefWidth="128.0" style="-fx-background: #252E37; -fx-padding: 0;" translateX="1.0" translateY="1.0" translateZ="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <content>
                               <AnchorPane BorderPane.alignment="CENTER">
                                  <children>
-                                    <Text fill="#cc3535" layoutX="8.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DashBord">
-                                       <font>
-                                          <Font name="System Bold Italic" size="21.0" />
-                                       </font>
-                                    </Text>
-                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../Desktop/teste/icon/btnBreak.png" />
+                                          <Image url="@../../../../../../../../../Desktop/teste/icon/btnBreak.png" />
                                        </image>
                                     </ImageView>
-                                    <Button fx:id="btnInicio" contentDisplay="TOP" layoutY="42.0" mnemonicParsing="false" onAction="#btnHomeOnClick" prefHeight="78.0" prefWidth="127.0" text="Inicio">
+                                    <Button fx:id="btnInicio" contentDisplay="TOP" layoutY="109.0" mnemonicParsing="false" onAction="#btnInicioClicado" prefHeight="78.0" prefWidth="127.0" text="Inicio">
                                        <graphic>
                                           <ImageView fx:id="imgInicioBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../../../../Desktop/teste/icon/home.png" />
+                                                <Image url="@../../../../../../../../../Desktop/teste/icon/home.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../Desktop/teste/icon/btnBreak.png" />
+                                          <Image url="@../../../../../../../../../Desktop/teste/icon/btnBreak.png" />
                                        </image>
                                     </ImageView>
-                                    <Button fx:id="btnProjetos" contentDisplay="TOP" layoutY="133.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="127.0" text="Projetos">
+                                    <Button fx:id="btnProjetos" contentDisplay="TOP" layoutY="200.0" mnemonicParsing="false" onAction="#btnCadastrarClicado" prefHeight="78.0" prefWidth="127.0" text="Projetos">
                                        <graphic>
                                           <ImageView fx:id="imgProjetosBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../../../../Desktop/teste/icon/stock.png" />
+                                                <Image url="@../../../../../../../../../Desktop/teste/icon/stock.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <Button fx:id="btnEquipe" contentDisplay="TOP" layoutY="316.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="127.0" text="Equipe">
+                                    <Button fx:id="btnEquipe" contentDisplay="TOP" layoutY="290.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="127.0" text="Equipe">
                                        <graphic>
                                           <ImageView fx:id="imgEquipeBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../../../../Desktop/teste/icon/employe.png" />
+                                                <Image url="@../../../../../../../../../Desktop/teste/icon/employe.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../Desktop/teste/icon/btnBreak.png" />
+                                          <Image url="@../../../../../../../../../Desktop/teste/icon/btnBreak.png" />
                                        </image>
                                     </ImageView>
-                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="552.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../Desktop/teste/icon/btnBreak.png" />
+                                          <Image url="@../../../../../../../../../Desktop/teste/icon/btnBreak.png" />
                                        </image>
                                     </ImageView>
-                                    <Button fx:id="btnteste" contentDisplay="TOP" layoutY="225.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="127.0" text="Teste">
-                                       <graphic>
-                                          <ImageView fx:id="imgTesteBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../../../../../../../../Desktop/teste/icon/sell2.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                    </Button>
-                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="578.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../../../../../../../../Desktop/teste/icon/btnBreak.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Button fx:id="btnConfiguraçoes" contentDisplay="TOP" layoutY="405.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="127.0" text="Configuraçoes">
+                                    <Button fx:id="btnConfiguraçoes" contentDisplay="TOP" layoutY="379.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="127.0" text="Configuraçoes">
                                        <graphic>
                                           <ImageView fx:id="imgConfigBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../../../../Desktop/teste/icon/settings.png" />
+                                                <Image url="@../../../../../../../../../Desktop/teste/icon/settings.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../Desktop/teste/icon/btnBreak.png" />
+                                          <Image url="@../../../../../../../../../Desktop/teste/icon/btnBreak.png" />
                                        </image>
                                     </ImageView>
-                                    <Button fx:id="btnConfiguracoes" contentDisplay="TOP" layoutY="496.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="127.0" text="Informações">
+                                    <Button fx:id="btnConfiguracoes" contentDisplay="TOP" layoutY="470.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="127.0" text="Informações">
                                        <graphic>
                                           <ImageView fx:id="imgInformaçoesBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../../../../Desktop/teste/icon/about.png" />
+                                                <Image url="@../../../../../../../../../Desktop/teste/icon/about.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
                                     </Button>
+                                    <Circle fx:id="imgUsuario" fill="DODGERBLUE" layoutX="63.0" layoutY="47.0" radius="39.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Label fx:id="lblUsrNomePopOver" alignment="CENTER" layoutX="17.0" layoutY="86.0" prefHeight="17.0" prefWidth="94.0" text="NOME" />
+                                    <Button fx:id="btnLogOut" layoutX="25.0" layoutY="563.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="76.0" style="-fx-background-color: #C982AA;" text="SAIR" />
                                  </children>
                               </AnchorPane>
                            </content>
@@ -148,50 +127,14 @@
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <HBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="200.0" GridPane.columnIndex="2">
-                                       <children>
-                                          <AnchorPane prefHeight="48.0" prefWidth="160.0">
-                                             <children>
-                                                <MenuButton fx:id="mbtnUsrInfoBox" layoutY="4.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="120.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
-                                                  <items>
-                                                    <MenuItem fx:id="miPopOver" mnemonicParsing="false">
-                                                         <graphic>
-                                                            <AnchorPane prefHeight="225.0" prefWidth="190.0">
-                                                               <children>
-                                                                  <Circle fx:id="circuloImgUsr" fill="DODGERBLUE" layoutX="100.0" layoutY="49.0" radius="46.0" stroke="BLACK" strokeType="INSIDE" />
-                                                                  <Label fx:id="lblUsrNomePopOver" alignment="CENTER" layoutY="107.0" prefHeight="15.0" prefWidth="196.0" text="UserName" />
-                                                                  <Label fx:id="lblNomeCompleto" alignment="CENTER" layoutX="2.0" layoutY="129.0" prefHeight="15.0" prefWidth="196.0" text="Full Name" />
-                                                                  <Label fx:id="lblRoleAs" alignment="CENTER" layoutX="3.0" layoutY="148.0" prefHeight="15.0" prefWidth="196.0" text="Role" />
-                                                                  <Hyperlink fx:id="hlEditUpdateAccount" alignment="CENTER" layoutX="3.0" layoutY="163.0" prefHeight="23.0" prefWidth="194.0" text="Edit/Update" />
-                                                                  <Button fx:id="btnLogOut" layoutX="3.0" layoutY="184.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="196.0" text="logOut" />
-                                                               </children>
-                                                            </AnchorPane>
-                                                         </graphic>
-                                                      </MenuItem>
-                                                  </items>
-                                                   <graphic>
-                                                      <AnchorPane prefHeight="20.0" prefWidth="120.0">
-                                                         <children>
-                                                            <Circle fx:id="imgUsuario" fill="DODGERBLUE" layoutX="26.0" layoutY="24.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
-                                                            <Label fx:id="lblUsrNome" layoutX="52.0" layoutY="17.0" text="Rifat" />
-                                                         </children>
-                                                      </AnchorPane>
-                                                   </graphic>
-                                                   <padding>
-                                                      <Insets left="-15.0" top="-10.0" />
-                                                   </padding>
-                                                </MenuButton>
-                                             </children>
-                                          </AnchorPane>
-                                       </children>
-                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="200.0" GridPane.columnIndex="2" />
                                     <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                                        <children>
-                                          <ToggleButton fx:id="sideMenuToogleBtn" mnemonicParsing="false">
+                                          <ToggleButton fx:id="sideMenuToogleBtn" mnemonicParsing="false" onAction="#btnhamburguer">
                                              <graphic>
                                                 <ImageView fx:id="imgMenuBtn" fitHeight="52.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                                    <image>
-                                                      <Image url="@../../../../../../../../Desktop/teste/icon/menu.png" />
+                                                      <Image url="@../../../../../../../../../Desktop/teste/icon/menu.png" />
                                                    </image>
                                                 </ImageView>
                                              </graphic>

@@ -76,14 +76,15 @@ public class CadastroProjetoController {
     
     public void inserirProjeto(){
 		Projeto projeto = new Projeto();
-		projeto.setNome(txtNome.getText());
+		/*projeto.setNome(txtNome.getText());
 		projeto.setCusto(Double.parseDouble(txtCusto.getText()));
 		projeto.setEsfHoras(Integer.parseInt(txtEsfHr.getText()));
 		projeto.setEsfMeses(Integer.parseInt(txtEsfMes.getText()));
 		projeto.setTotPtFunc(Integer.parseInt(txtTotPntFunc.getText()));
 		projeto.setObjetivo(txtObj.getText());
 		projeto.setDtInicio((String)dateDtIni.getEditor().getText());
-		projeto.setDtFim((String)dateDtFim.getEditor().getText());
+		projeto.setDtFim((String)dateDtFim.getEditor().getText());*/
+		projeto.setNome("teste");
 
 		ProjetoDao projetoDao = new ProjetoDao();
 		projetoDao.inserirProjetoBD(projeto);

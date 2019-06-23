@@ -1,8 +1,4 @@
 
-/* 
-    Created on : Jun 13, 2015, 3:29:41 PM
-    Author     : rifat
-*/
 .button{
     -fx-border-width: 0px 0px 0px 5px;
     -fx-border-radius: 0px;
@@ -25,22 +21,20 @@
 }
 .button:pressed{
     -fx-text-fill: white;
+    
 }
 .button:hover{
     -fx-background-color: #929292;
     -fx-text-fill: white;
+    -fx-border-color: rgb(30, 144, 255);
+	-fx-border-width: 0px 4px 0px 0px;
 }
 
 MenuButton{
 
 }
 
-.scroll-pane {
 
-    /*    -fx-background-insets: 0;*/
-    -fx-padding: 0;
-    -fx-background:#282E34;
-}
 
 .list-view .scroll-bar:horizontal .track,
 .list-view .scroll-bar:vertical .track{
@@ -107,8 +101,6 @@ MenuButton{
     -fx-padding:0 0 10 0;*/
 
 }
-
-
 #sideMenuToogleBtn{
     -fx-padding: 0;
     -fx-background-color: transparent;
@@ -138,3 +130,5 @@ MenuButton{
 #lblUsrName{
     -fx-text-fill: white;
 }
+
+

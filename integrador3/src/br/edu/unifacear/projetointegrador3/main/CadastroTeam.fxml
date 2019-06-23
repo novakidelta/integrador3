@@ -12,12 +12,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" styleClass="linear-grad1" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unifacear.projetointegrador3.main.CadastroProjetoController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" styleClass="linear-grad1" stylesheets="@../style/application3.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unifacear.projetointegrador3.main.CadastroProjetoController">
    <children>
       <Circle fill="WHITE" layoutX="26.0" layoutY="30.0" radius="160.0" stroke="WHITE" strokeType="INSIDE" />
       <Circle fill="WHITE" layoutX="285.0" layoutY="466.0" radius="202.0" stroke="WHITE" strokeType="INSIDE" />
       <Pane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: black;" />
-      <Pane layoutX="16.0" layoutY="84.0" prefHeight="332.0" prefWidth="269.0" styleClass="paneGradBord" stylesheets="@application.css">
+      <Pane layoutX="16.0" layoutY="84.0" prefHeight="332.0" prefWidth="269.0" styleClass="paneGradBord" stylesheets="@../style/application3.css">
          <children>
             <TextField fx:id="txtFieldNome" layoutX="28.0" layoutY="73.0" opacity="0.33" prefHeight="34.0" prefWidth="213.0" style="-fx-background-radius: 10;" />
             <TextField fx:id="txtFieldFunc" layoutX="28.0" layoutY="189.0" opacity="0.33" prefHeight="34.0" prefWidth="213.0" style="-fx-background-radius: 10;" />

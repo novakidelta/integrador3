@@ -105,18 +105,31 @@ public class ApplicationController {
 	    }
 	    
 	    @FXML
-	    public void btnHomeOnClick(ActionEvent event){
-
-	        FXMLLoader fxmlLoader = new FXMLLoader();
-	        try {
-	            fxmlLoader.load(getClass().getClassLoader().getResource("CadastroTeam.fxml").openStream());
-	        } catch (IOException e) {
-	            
-	        }
-	        AnchorPane root = fxmlLoader.getRoot();
-	        acContent.getChildren().clear();
-	        acContent.getChildren().add(root);
-
+	    public void btnInicioClicado(ActionEvent event){
+     
+	    	 FXMLLoader fxmlLoader = new FXMLLoader();
+	         try {
+	             fxmlLoader.load(getClass().getResource("TelaInicio.fxml").openStream());
+	         } catch (IOException e) {
+	             
+	         }
+	         AnchorPane root = fxmlLoader.getRoot();
+	         acContent.getChildren().clear();
+	         acContent.getChildren().add(root);
+	    }
+	    
+	    @FXML
+	    public void btnCadastrarClicado(ActionEvent event){
+     
+	    	 FXMLLoader fxmlLoader = new FXMLLoader();
+	         try {
+	             fxmlLoader.load(getClass().getResource("CadastrarProjeto.fxml").openStream());
+	         } catch (IOException e) {
+	             
+	         }
+	         AnchorPane root = fxmlLoader.getRoot();
+	         acContent.getChildren().clear();
+	         acContent.getChildren().add(root);
 	    }
 	    
 

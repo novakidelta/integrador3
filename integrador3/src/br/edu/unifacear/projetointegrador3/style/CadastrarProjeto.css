@@ -1,0 +1,8 @@
+.paneGradBord{
+	-fx-background-color: linear-gradient(to bottom left,  #906DD6, #02C7CB);
+	-fx-effect: dropshadow(three-pass-box, #000000, 10, 0, 0, 0);
+	-fx-background-radius: 20;
+	-fx-border-radius: 20;
+}
+
+
